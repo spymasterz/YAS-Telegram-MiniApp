@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f1e9">
+  <title>YAS | پورتفولیوی طراحی لباس</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="announcement">
+    YAS STUDIO — طراحی با نگاه متفاوت
+  </div>
+
+  <header class="site-header">
+    <a class="wordmark" href="#">
+      YAS<sup>®</sup>
+      <small>FASHION PORTFOLIO</small>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#collection">مجموعه آثار</a>
+      <a href="#about">درباره استودیو</a>
+      <a href="#contact">ارتباط</a>
+    </nav>
+
+    <button class="admin-entry" id="openAdmin">
+      مدیریت آثار ↗
+    </button>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="باز کردن منو">
+      ☰
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">استودیو طراحی لباس YAS</div>
+
+        <h1>
+          از یک ایده،<br>
+          <em>تا یک فرم تازه.</em>
+        </h1>
+
+        <p>
+          روایت تصویری مسیر طراحی؛ از اولین خط‌های روی کاغذ
+          تا تجربه پارچه، حجم و جزئیات نهایی.
+        </p>
+
+        <a class="primary-link" href="#collection">
+          کاوش در آثار <span>↙</span>
+        </a>
+
+        <div class="hero-index">
+          <span>01 / 03</span>
+          <span>IDEAS INTO FORM</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img
+          src="photo_2026-10-14_18-35-27.jpg"
+          alt="تصویر مد و طراحی لباس"
+        >
+
+        <div class="visual-frame"></div>
+
+        <div class="visual-caption">
+          <span>COLLECTION No. 01</span>
+          <span>FORM & FABRIC</span>
+        </div>
+
+        <div class="round-stamp">
+          DESIGN<br>WITH<br>INTENTION
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-band" id="about">
+      <span class="section-kicker">THE STUDIO</span>
+
+      <p>
+        لباس فقط یک فرم نیست؛
+        <em>ترکیبی از ایده، بافت و احساس است.</em>
+      </p>
+
+      <span class="intro-symbol">✳</span>
+    </section>
+
+    <section class="collection section-wrap" id="collection">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker">SELECTED WORKS / 2026</span>
+          <h2>مجموعه آثار</h2>
+        </div>
+
+        <p>هر طرح، یک مسیر برای کشف فرم‌های تازه است.</p>
+      </div>
+
+      <div class="filter-row" id="filters">
+        <button class="filter-chip active" data-filter="all">
+          همه آثار <span id="allCount">03</span>
+        </button>
+
+        <button class="filter-chip" data-filter="sketch">
+          اسکچ طراحی
+        </button>
+
+        <button class="filter-chip" data-filter="digital">
+          طراحی دیجیتال
+        </button>
+
+        <button class="filter-chip" data-filter="moulage">
+          مولاژ
+        </button>
+      </div>
+
+      <div class="work-grid" id="workGrid"></div>
+
+      <div class="gallery-bottom">
+        <span>YAS ARCHIVE — A STUDY OF DESIGN</span>
+        <button id="resetFilters">نمایش همه آثار ↑</button>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <span class="quote-mark">“</span>
+
+      <p>
+        زیبایی در جزئیات پنهان است؛<br>
+        <em>در خطی که مسیر را عوض می‌کند.</em>
+      </p>
+
+      <span class="quote-credit">YAS STUDIO / DESIGN NOTES</span>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div>
+        <span class="section-kicker">LET’S CONNECT</span>
+        <h2>برای ایده بعدی<br>همراه شویم.</h2>
+      </div>
+
+      <div class="contact-right">
+        <p>
+          برای همکاری، سفارش طراحی یا گفت‌وگو درباره پروژه‌ها پیام بدهید.
+        </p>
+
+        <a href="https://www.instagram.com/yaskh_studio1_7?dlrf=bXFyN2toeW00am45">
+          تماس با استودیو <span>↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-logo" href="#">YAS®</a>
+    <span>© 2026 YAS STUDIO — تمام حقوق محفوظ است.</span>
+    <a href="#" id="backTop">بازگشت به بالا ↑</a>
+  </footer>
+
+  <!-- نمایش بزرگ تصاویر -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose">×</button>
+    <img id="lightboxImage" src="" alt="">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <!-- پنل مدیریت نمایشی -->
+  <div class="modal-backdrop" id="adminModal" aria-hidden="true">
+    <section class="admin-modal" role="dialog" aria-modal="true">
+
+      <button class="modal-close" id="closeAdmin">×</button>
+
+      <div class="admin-heading">
+        <span class="section-kicker">YAS / CONTENT STUDIO</span>
+        <h2>مدیریت آثار</h2>
+      </div>
+
+      <form id="adminLoginForm" class="admin-login">
+        <label for="adminPassword">رمز ورود مدیریت</label>
+
+        <div class="password-row">
+          <input
+            id="adminPassword"
+            type="password"
+            placeholder="رمز مدیریت را وارد کنید"
+            required
+          >
+
+          <button type="submit">ورود ↗</button>
+        </div>
+
+        <p class="form-message" id="loginMessage"></p>
+      </form>
+
+      <div class="admin-workspace" id="adminWorkspace" hidden>
+        <div class="workspace-top">
+          <span>افزودن اثر جدید</span>
+          <button type="button" id="logoutAdmin" class="subtle-button">
+            خروج از مدیریت
+          </button>
+        </div>
+
+        <form id="workForm" class="work-form">
+          <label>
+            عنوان اثر
+            <input id="workTitle" maxlength="100" required
+              placeholder="مثلاً: فرم‌های آرام">
+          </label>
+
+          <label>
+            دسته‌بندی
+            <select id="workCategory">
+              <option value="sketch">اسکچ طراحی</option>
+              <option value="digital">طراحی دیجیتال</option>
+              <option value="moulage">مولاژ</option>
+            </select>
+          </label>
+
+          <label>
+            توضیحات
+            <textarea id="workDescription" rows="3" maxlength="500"
+              placeholder="درباره ایده این اثر بنویس..."></textarea>
+          </label>
+
+          <label class="upload-area">
+            <span class="upload-plus">＋</span>
+            <strong>انتخاب تصویر اثر</strong>
+            <small>JPG، PNG یا WEBP — حداکثر ۵ مگابایت</small>
+            <input id="workImage" type="file"
+              accept="image/png,image/jpeg,image/webp">
+          </label>
+
+          <div class="image-preview" id="imagePreview" hidden>
+            <img id="previewImage" alt="پیش‌نمایش تصویر">
+            <button id="clearImage" type="button">حذف تصویر ×</button>
+          </div>
+
+          <button class="submit-work" type="submit">
+            انتشار اثر <span>↗</span>
+          </button>
+
+          <p class="form-message" id="workMessage"></p>
+        </form>
+
+        <div class="manage-list-heading">
+          <span>آثار موجود</span>
+          <span id="adminCount"></span>
+        </div>
+
+        <div class="manage-list" id="manageList"></div>
+      </div>
+
+      <p class="admin-footnote">
+       .سلام مدیر
+      </p>
+    </section>
+  </div>
+
+</body>
+</html>
